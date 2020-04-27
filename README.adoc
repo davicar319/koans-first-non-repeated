@@ -1,0 +1,40 @@
+= First Non-Repeated Character Koans
+
+A very simple koans-like project that finds and returns the first character in a string that
+is not repeated anywhere in the string.  The problem is solved in a number of ways using old
+and new Java features.  It is tested via Groovy and Spock.
+
+== Problem Statement
+
+The problem that this koans solves is to find and report the first character in a string
+that is unique in that string.  If the string does not have any characters that are not
+repeated it should return something to indicate that.  Part of this koans is to explore
+how various return types help or hurt understanding and readability.
+
+
+|===
+| Example Input | Expected Output
+
+| "" <Empty String>
+| <Empty Result>
+
+| "a"
+| Result containing the character 'a' and the index 0
+
+| "aa"
+| <Empty Result>
+
+| "aabbc"
+| Result containing the character 'c' and the index 4
+
+| "aabcbc"
+| <Empty Result>
+
+| "aabcbcdefa"
+| Result containing the letter d and the index 6
+
+| <null>
+| <Empty Result>
+|===
+
+
